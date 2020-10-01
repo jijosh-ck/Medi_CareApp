@@ -26,35 +26,83 @@ class _HomeScreenState extends State<HomeScreen> {
                   image: AssetImage("assets/backgrounds/mc7.jpg"),
               fit: BoxFit.fill)),
             ),
-            SafeArea(
-              child: Container(
-                height: double.infinity,
-                child: SingleChildScrollView(
-                  physics: AlwaysScrollableScrollPhysics(),
-                  padding: EdgeInsets.symmetric(
-                    horizontal: 20,
-                    vertical: 50,
-                  ),
-                  child: Column(
-                    children: [
-                      Container(
-                        width: double.infinity,
-                        height: 150,
-                        child: Center(
-                          child:Text(Covid_19.name,style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold),),),
-                      ),
-                      SizedBox(height: 20),
-                         GridView.count(
-                            crossAxisCount: 2,
-                           children: [
-                             Image.asset("assets/logos/google.jpg"),
-                           ],
-                          ),
-                    ],
-                  ),
-                ),
-              ),
+            Padding(
+              padding: const EdgeInsets.only(left: 70.0,right: 70.0,top: 10.0,bottom: 10.0),
+              child: Image.asset("assets/logos/logo.png"),
             ),
+            Padding(
+              padding: const EdgeInsets.only(top: 250.0,left: 10.0,right: 10.0),
+              child: GridView.count(
+              crossAxisCount: 2,
+              crossAxisSpacing: 4.0,
+              mainAxisSpacing: 8.0,
+              children: <Widget>[
+                Container(
+                    child: Column(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: Image.asset("assets/logos/logo.png",
+                          height: 100.0,
+                          width: 100.0,),
+                        ),
+                        Center(
+                          child: Text("Profile"),
+                        )
+                      ],
+                    )
+                ),
+                Container(
+                    child: Column(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: Image.asset("assets/logos/logo.png",
+                            height: 100.0,
+                            width: 100.0,),
+                        ),
+                        Center(
+                          child: Text("Alert"),
+                        )
+                      ],
+                    )
+                ),
+                Container(
+                    child: Column(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: Image.asset("assets/logos/logo.png",
+                            height: 100.0,
+                            width: 100.0,),
+                        ),
+                        Center(
+                          child: Text("Medicine"),
+                        )
+                      ],
+                    )
+                ),
+                Container(
+                    child: Column(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: Image.asset("assets/logos/logo.png",
+                            height: 100.0,
+                            width: 100.0,),
+                        ),
+                        Center(
+                          child: Text("logout"),
+                        )
+                      ],
+                    )
+                ),
+              ],
+
+            ),),
+
+
+
           ],
         ) ,
       ),

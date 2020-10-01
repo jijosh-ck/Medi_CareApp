@@ -28,7 +28,7 @@ class _SignUpState extends State<SignUp> {
           decoration: kBoxDecorationStyle,
           height: 50.0,
           child: TextField(
-            keyboardType: TextInputType.name,
+            keyboardType: TextInputType.text,
             style: TextStyle(
               color: Colors.black87,
               fontFamily: 'OpenSans',
